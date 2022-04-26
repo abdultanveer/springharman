@@ -30,7 +30,7 @@ public class ImplementAspect {
 		call.myMethod();
 	}
 
-	private void myMethod() {
+	public void myMethod() {
 		System.out.println("my other method");
 	}
 

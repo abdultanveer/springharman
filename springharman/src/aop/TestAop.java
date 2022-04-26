@@ -11,6 +11,10 @@ public class TestAop {
 		student.getId();
 		student.getName();
 		
+		ImplementAspect call = (ImplementAspect)context.getBean("aspect");
+		call.aspectCall();
+		call.myMethod();
+		
 
 	}
 }
