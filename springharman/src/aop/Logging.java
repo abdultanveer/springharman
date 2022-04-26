@@ -1,6 +1,7 @@
 package aop;
 
 import org.aopalliance.intercept.Joinpoint;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -12,6 +13,11 @@ public class Logging {
 	@Before("allStudentMethods()")
 	public void loggingAdvice1() {
 		System.out.println("log--before method is executed");
+	}
+	
+	@After("allStudentMethods()")
+	public void loggingAdvice2() {
+		System.out.println("log--after method is executed");
 	}
 
 	/*
