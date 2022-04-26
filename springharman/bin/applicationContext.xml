@@ -47,7 +47,12 @@
 	<bean id="aspect" class="aop.ImplementAspect" />
 	<bean class="aop.Logging" />
 	
-		<bean id = "std" class="aop.Student" />
+		<bean id = "std" class="aop.Student" >
+			<constructor-arg value = "123"/>
+						<constructor-arg value = "abdul"/>
+						<constructor-arg value = "345"/>
+			
+		</bean>
 	
 
 
