@@ -11,6 +11,9 @@ public class Logging {
 		System.out.println("log--before method is executed");
 	}
 	
-	
+	@Before("execution(public * get*())")
+	public void loggingAdviceGet() {
+		System.out.println("log--before getter is executed");
+	}
 
 }

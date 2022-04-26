@@ -46,6 +46,9 @@
 
 	<bean id="aspect" class="aop.ImplementAspect" />
 	<bean class="aop.Logging" />
+	
+		<bean id = "std" class="aop.Student" />
+	
 
 
 </beans> 
